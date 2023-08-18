@@ -10,4 +10,8 @@ Funcionar como um banco de figurinhas acessível, onde seja possível buscar a f
 Inicialmente, o projeto englobará apenas figurinhas das Copas do Mundo, mas é livre para colaboração e expandir para outros álbuns! ⚽
 
 
+<<<<<<< HEAD
 Este é um projeto realizado em acompanhamento ao Módulo 2 de Desenvolvimento de Software Back-end da Cubos Academy.
+=======
+Este é um projeto realizado em acompanhamento ao Módulo 2 de Desenvolvimento de Software Back-end da Cubos Academy.
+>>>>>>> a42a910405ff6dcaa67e47f032accd9d7db90f9b
