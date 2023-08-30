@@ -13,9 +13,8 @@ Este é um projeto realizado em acompanhamento ao Módulo 2 de Desenvolvimento d
 
 ## Requisitos
 
-- Instalar o [Node](https://nodejs.org/en/)
+- [Node.js](https://nodejs.org/en/)
 - Express.js
-- VS Code
 - [Insomnia](https://insomnia.rest/)
 
 ## Instalação
