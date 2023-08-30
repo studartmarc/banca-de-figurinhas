@@ -1,13 +1,10 @@
 const express = require("express");
-const { listagemFigurinhas, obterFigurinhas } = require("./controladores/figurinhas");
-const { validarSenha } = require("./controladores/intermediarios");
-
+const port = 3000;
 const app = express();
+const routes = require("./routes");
 
-app.use(validarSenha);
+app.use(express.json());
 
-app.get("/figurinhas", listagemFigurinhas);
-app.get("/figurinhas/:id", obterFigurinhas)
+routes.use();
 
-
-app.listen(3000);
+app.listen(port);
