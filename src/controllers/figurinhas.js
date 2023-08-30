@@ -20,7 +20,7 @@ const listFigurinhas = (req, res) => {
             return figurinhas.nome === nome;
         });
     };
-    res.json({ result });
+    return res.json({ result });
 
 };
 
@@ -29,7 +29,7 @@ const getFigurinhas = (req, res) => {
     const figurinhaEncontrada = figurinhas.find((figurinha) => {
         return figurinha.id == id;
     })
-    res.json({ figurinhaEncontrada });
+    return res.json({ figurinhaEncontrada });
 
 };
 
