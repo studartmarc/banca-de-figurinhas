@@ -1,5 +1,5 @@
-const figurinhas = require("../bancodefigurinhas");
-const albuns = require("../utils/bancodedados");
+const figurinhas = require("../../database/bancodefigurinhas");
+const albuns = require("../../utils/bancodedados");
 
 const listFigurinhas = (req, res) => {
     const { ano, pais, nome } = req.query;

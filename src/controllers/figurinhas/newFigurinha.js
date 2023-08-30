@@ -1,7 +1,7 @@
-const figurinhas = require("../bancodefigurinhas");
+const figurinhas = require("../../database/bancodefigurinhas");
 
 const newFigurinha = (req, res) => {
-    const { nomeFig, paisFig, anoFig, cromoFig } = req.body;
+    const { nomeFig, paisFig, anoFig, cromoFig, telefone } = req.body;
     const { id } = figurinhas;
 
     const novaFigurinha = {
@@ -10,6 +10,8 @@ const newFigurinha = (req, res) => {
         pais: paisFig,
         album: anoFig,
         cromo: cromoFig,
+        trocar: true,
+        contato: telefone,
     };
 
     figurinhas.push(novaFigurinha);

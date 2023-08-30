@@ -1,14 +1,14 @@
 const express = require("express");
-const { listFigurinhas, getFigurinhas } = require("./controladores/figurinhas");
+const { listFigurinhas, getFigurinhas } = require("./controllers/figurinhas/figurinhas");
 const checkPassword = require("./middlewares/checkPassword");
-const newFigurinha = require("./controllers/newFigurinha");
+const newFigurinha = require("./controllers/figurinhas/newFigurinha");
 const checkData = require("./utils/checkData");
 
-const rotas = express();
+const routes = express();
 
-rotas.get("/figurinhas", checkPassword, listFigurinhas);
-rotas.get("/figurinhas/encontrar/:id", getFigurinhas);
-rotas.post("/figurinhas/cadastrar", checkData, newFigurinha);
+routes.get("/figurinhas", checkPassword, listFigurinhas);
+routes.get("/figurinhas/encontrar/:id", getFigurinhas);
+routes.post("/figurinhas/cadastrar", checkData, newFigurinha);
 
 
-module.exports = rotas;
+module.exports = routes;
